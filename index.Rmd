@@ -1,0 +1,283 @@
+--- 
+title: "Analisis Kuantitatif"
+subtitle: "`r if (knitr::is_latex_output()) {'Dengan Contoh Menggunakan R'} else {'Dengan Contoh Menggunakan R'}`"
+author: "Tedy Herlambang"
+site: bookdown::bookdown_site
+always_allow_html: true
+documentclass: krantz
+bibliography: r/book.bib
+fig-caption: yes
+link-citations: yes
+github-repo: https://github.com/bangtedy/akuanti
+pagetitle: "Analisis Kuantitatif: Dengan Contoh Menggunakan R"
+description:  "An Introduction to quantitative analysis for business and management"
+url:  "https://bangtedy.github.io/akuanti"
+# cover-image: "www/cover/coverpage-og.png"
+twitter-handle: "t_hlb"
+papersize: A4
+fontsize: 12pt
+lot: true
+lof: true
+---
+
+```{r, echo = FALSE}
+library(reticulate)
+library(JuliaCall)
+
+if (knitr::is_latex_output()) {
+  options(width = 100)
+}
+
+# bookdown::render_book("index.Rmd", output_format = "bookdown::bs4_book", config_file = "_bookdown_bs4.yml")
+# knitr::opts_chunk$set(dpi=300)
+knitr::opts_chunk$set(out.width = "90%")
+```
+
+```{r, echo = FALSE}
+# google scholar metadata
+library(metathis)
+
+if (knitr::is_html_output()) {
+  meta() |> 
+    meta_google_scholar(
+      title = "Analisis Kuantitatif: Dengan Contoh Menggunakan R",
+      author = "Tedy Herlambang",
+      publication_date = "2022",
+      isbn = ""
+    ) 
+}
+```
+
+<!--
+<div class="banner">
+  <div class="banner__content">
+    <div class="banner__text">
+      <strong>News:</strong> The new textbook in this series - <i>Handbook of Graphs and Networks in People Analytics</i> - is now online <a href="https://ona-book.org">here</a>
+      <button class="banner__close" type="button">
+        <span class="material-icons">
+          close
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+<script>
+      document.querySelector(".banner__close").addEventListener("click", function() {
+        this.closest(".banner").style.display = "none";
+      });
+</script>
+-->
+
+`r if (knitr::is_latex_output()) '<!--'`
+
+# Welcome {-}
+
+Welcome to the website for the book *Analisis Kuantitatif: Dengan Contoh Menggunakan R* by [Tedy Herlambang](https://twitter.com/t_hlb).  
+
+```{asis}
+<!-- 
+<p style="text-align: center;"><a href="https://www.routledge.com/Handbook-of-Regression-Modeling-in-People-Analytics-With-Examples-in-R/McNulty/p/book/9781032041742?utm_source=website&utm_medium=shared_link&utm_campaign=B027587_jm1_5ll_8pm_d765_handbookofregressionmodeling"><img src="www/cover/coverpage.png" alt="Handbook of Regression Modeling Cover" width="300"/></a></p>
+-->
+
+::: {.rmdnote}
+**Note**: This book is a work in progress. If you have any feedback, please feel free to [file an issue on GitHub](https://github.com/bangtedy/akuanti/issues). Thank you!
+:::
+```
+
+`r if (knitr::is_latex_output()) '--> \\newpage\\thispagestyle{empty}\\null'`
+
+
+`r if (knitr::is_latex_output()) '<!--'`
+
+## Deskripsi Singkat Mata Kuliah {-}
+
+Matakuliah ini akan membahas dan mempresentasikan konsep-konsep dan prinsip-prinsip statistika sebagai alat investigasi kuantitatif yang dilengkapi dengan grafik dan verbal yang intuitif untuk pengambilan keputusan bisnis. Matakuliah ini berfokus pada alat-alat/metode-metode yang dapat diterapkan (khususnya regresi) untuk pengambilan keputusan bisnis dan mengembangkan keterampilan penggunaan program komputer R. 
+
+Materi yang akan dibahas meliputi: statistik dan analitik bisnis, visualisasi data dengan grafik dan chart, statistika deskriptif, peluang, Distribusi diskret dan kontinyu, Distribusi Uniform dan Distribusi Normal, distribusi Sampling, estimasi parameter, uji hipotesis, korelasi, regresi sederhana, regresi berganda, uji asumsi klasik, GLM.
+
+Buku Rujukan Utama:
+
+1.	Black, Ken. 2019. Business statistics: for contemporary decision making, 10th edition. Wiley
+
+Buku Pendukung:
+
+1.	Akinkunmi, Mustapha Abiodun, 2019.  Business Statistics with Solutions in R. Walter de Gruyter GmbH.
+2.	Heumann, C., Schomaker, M & Shalabh, 2016. Introduction to Statistics and Data Analysis : With Exercises, Solutions and Applications in R. Springer.
+
+## Capaian Pembelajaran Matakuliah {-}
+
+Mahasiswa mampu menjelaskan dan mempresentasikan konsep-konsep statistika sebagai alat investigasi kuantitatif yang dilengkapi dengan grafik dan verbal yang intuitif untuk pengambilan keputusan bisnis serta memiliki keterampilan keterampilan penggunaan program komputer R. 
+
+
+## RENCANA PELAKSANAAN PEMBELAJARAN {-}
+
+### Minggu 1 {-}
+
+**Tujuan Pembelajaran:**	
+
+1.	Mahasiswa mampu mencontohkan grafik dan data statistic dalam konteks bisnis.
+2.	Mahasiswa mampu menjelaskan istilah-istilah statistic yang penting seperti populasi, sampel, parameters dan kaitannya dengan statistika deskriptif dan inferensial.
+3.	Mahasiswa dapat membedakan antara variable, pengukuran dan data.
+4.	Mahasiswa mampu membandingkan empat level data: nominal, ordinal, interval, dan rasio.
+
+**Materi Pokok:**
+
+1.	Konsep dasar statistika
+2.	Pengukuran data
+
+### Minggu 2 {-}
+
+**Tujuan Pembelajaran:**
+
+1.	Mahasiswa mampu membuat distribusi frekuensi dari data.
+2.	Mahasiswa mampu membuat dan menginterpretasikan berbagai grafik data kuantitatif seperti histograms, frequency polygons, ogives, dot plots, dan stem-and-leaf plots.
+3.	Mahasiswa mampu membuat dan menginterpretasikan berbagai grafik data kualitatif : pie charts, bar graphs, and Pareto charts.
+4.	Mahasiswa mampu membangun table tabulasi silang. 
+5.	Mahasiswa mampu membuat grafik time-series dan mengidentifikasi trend di dalam data.
+
+**Materi Pokok:**		
+
+1.	Distribusi frekuensi
+2.	Grafik data kuantitatif
+3.	Grafik data kualitatif
+4.	Grafik dua variabel
+5.	Visualisasi data Time-Series
+
+
+### Minggu 3 {-}
+
+**Tujuan Pembelajaran:**
+
+1.	Mahasiswa mampu menerapkan berbagai ukuran pemusatan: rata-rata, median dan mode pada sekumpulan data. 
+2.	Mahasiswa mampu menerapkan berbagai ukuran persebaran pada data: range, interquartile range, variance, and standard.
+3.	Mahasiswa mampu menjelaskan distribusi data secara statistic dan grafik dengan menggunakan skewness and box-and-whisker plots.
+4.	Mahasiswa  mampu menggunakan statistika deskriptif sebagai alat analitik bisnis dalam membuat keputusan.
+
+**Materi Pokok:**
+
+1. Ukuran pemusatan
+2. Ukuran persebaran
+3. Ukuran bentuk
+
+### Minggu 4 {-}
+
+**Tujuan Pembelajaran:**
+
+1.	Mahasiswa mampu menjelaskan peluang dan membedakan tiga metode untuk mendapatkan peluang.
+2.	Mahasiswa mampu menguraikan elemen-elemen dari peluang. 
+3.	Mahasiswa mampu membandingkan marginal, union, joint, and conditional probabilities.
+4.	Mahasiswa mampu menghitung peluang dengan menggunakan hukum penjumlahan dan joint probability
+5.	Mahasiswa mampu menghitung joint probability dari kejadian independen dan dependen dengan menggunakan hukum perkalian umum dan khusus.
+6.	Mahasiswa mampu menghitung conditional probabilities
+
+**Materi Pokok:**
+
+1.	Pengantar peluang
+2.	Struktur peluang
+3.	Marginal, Union, Joint, dan Conditional Probabilities
+4.	Hukum penjumlahan
+5.	Hukum perkalian
+6.	Conditional Probability
+
+### Minggu 5 {-}
+
+**Tujuan Pembelajaran:**
+
+1.	Mahasiswa mampu menjelaskan variable acak untuk membedakan antara distribusi diskret dengan distribusi kontinus. 
+2.	Mahasiwa mampu menentukan rata-rata, ragam, standar deviasi dari distribusi diskret. 
+3.	Mahasiswa mampu menyelesaikan persoalan yang melibatkan distribusi binomial dengan menggunakan rumus dan table binomial.
+4.	Mahasiswa mampu menyelesaikan soal yang melibatkan distribusi Poisson dengan menggunakan rumus dan table Poisson.
+5.	Mahasiswa mampu menyelesaikan soal yang melibatkan distribusi hypergeometric dengan menggunakan rumus hypergeometric.
+
+**Materi Pokok:**
+
+1.	Distribusi diskret dan Continuous
+2.	Distribusi Binomial
+3.	Distribusi Poisson 
+4.	Distribusi Hypergeometric
+
+### Minggu 6 {-}
+
+**Tujuan Pembelajaran:**
+
+1.	Mahasiswa mampu menyelesaikan peluang untuk data sebaran normal dengan menggunakan z scores
+2.	Mahasiswa mampu menemukan rata-rata, standar deviasi dan nilai x dengan menggunakan informasi luas kurva.
+3.	Mahasiswa mampu menyelesaikan persoalan dari data sebaran binomial dengan menggunakan sebaran normal. 
+4.	Mahasiswa mampu menyelesaikan peluang dalam sebaran eksponensial dan membandingkannya dengan distribusi diskret Poisson.
+
+**Materi Pokok:**
+
+1.	Distribusi Uniform 
+2.	Distribusi Normal 
+3.	Penggunaan kurva normal untuk distribusi Binomial 
+4.	Distribusi Eksponensial
+
+
+### Minggu 7 {-}
+
+**Tujuan Pembelajaran:**
+
+1.	Mahasiswa mampu membandingkan sampling dengan sensus dan membedakan berbagai kelebihan metode sampling.
+2.	Mahasiswa mampu menjelaskan distribusi rataan sampel dengan menggunakan teorema central limit.
+3.	Mahasiswa mampu menjelaskan distribusi proporsi dengan menggunakan rumus z.
+
+**Materi Pokok:**
+
+1.	Sampling
+2.	Distribusi Sampling X
+3.	Distribusi Sampling p
+
+
+### Minggu 8 {-}
+
+**UJIAN TENGAH SEMESTER**
+
+### Minggu 9 {-}
+
+**Tujuan Pembelajaran:**
+
+### Minggu 10 {-}
+
+**Tujuan Pembelajaran:**
+
+### Minggu 11 {-}
+
+**Tujuan Pembelajaran:**
+
+### Minggu 12 {-}
+
+**Tujuan Pembelajaran:**
+
+### Minggu 13 {-}
+
+**Tujuan Pembelajaran:**
+
+### Minggu 14 {-}
+
+**Tujuan Pembelajaran:**
+
+### Minggu 15 {-}
+
+**Tujuan Pembelajaran:**
+
+### Minggu 16 {-}
+
+**UJIAN AKHIR SEMESTER**
+
+
+Tedy Herlambang \
+September 2022
+
+
+Happy reading!
+
+*Last update:  `r format(Sys.Date(), "%d %B %Y")`*
+
+`r if (knitr::is_latex_output()) '-->'`
+
+
+
+
+
+
+

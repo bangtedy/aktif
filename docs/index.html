@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Welcome | Analisis Kuantitatif: Dengan Contoh Menggunakan R</title>
+<meta name="author" content="Tedy Herlambang">
+<meta name="description" content="An Introduction to quantitative analysis for business and management">
+<meta name="generator" content="bookdown 0.29 with bs4_book()">
+<meta property="og:title" content="Welcome | Analisis Kuantitatif: Dengan Contoh Menggunakan R">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://bangtedy.github.io/akuanti">
+<meta property="og:description" content="An Introduction to quantitative analysis for business and management">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Welcome | Analisis Kuantitatif: Dengan Contoh Menggunakan R">
+<meta name="twitter:site" content="@t_hlb">
+<meta name="twitter:description" content="An Introduction to quantitative analysis for business and management">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.0/transition.js"></script><script src="libs/bs3compat-0.4.0/tabs.js"></script><script src="libs/bs3compat-0.4.0/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><meta name="citation_title" content="Welcome | Analisis Kuantitatif: Dengan Contoh Menggunakan R">
+<meta name="citation_author" content="Tedy Herlambang">
+<meta name="citation_publication_date" content="2022">
+<meta name="citation_isbn" content="">
+<!-- Global site tag (gtag.js) - Google Analytics --><script async src="https://www.googletagmanager.com/gtag/js?id=G-N7JZGMVRZK"></script><script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-N7JZGMVRZK');
+    </script><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="Dengan Contoh Menggunakan R">Analisis Kuantitatif</a>:
+        <small class="text-muted">Dengan Contoh Menggunakan R</small>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="active" href="index.html">Welcome</a></li>
+<li><a class="" href="konsep-dasar.html"><span class="header-section-number">1</span> Konsep Dasar Analisis Kuantitatif</a></li>
+<li><a class="" href="distribusi-data.html"><span class="header-section-number">2</span> Distribusi Data</a></li>
+<li><a class="" href="ukuran-pemusatan.html"><span class="header-section-number">3</span> Ukuran Pemusatan</a></li>
+<li><a class="" href="peluang.html"><span class="header-section-number">4</span> Peluang</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/keithmcnulty/peopleanalytics-regression-book">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><!--bookdown:title:end--><!--bookdown:title:start--><div id="welcome" class="section level1 unnumbered">
+<h1>Welcome<a class="anchor" aria-label="anchor" href="#welcome"><i class="fas fa-link"></i></a>
+</h1>
+<p>Welcome to the website for the book <em>Analisis Kuantitatif: Dengan Contoh Menggunakan R</em> by <a href="https://twitter.com/t_hlb">Tedy Herlambang</a>.</p>
+<!-- 
+<p style="text-align: center;"><a href="https://www.routledge.com/Handbook-of-Regression-Modeling-in-People-Analytics-With-Examples-in-R/McNulty/p/book/9781032041742?utm_source=website&utm_medium=shared_link&utm_campaign=B027587_jm1_5ll_8pm_d765_handbookofregressionmodeling"><img src="www/cover/coverpage.png" alt="Handbook of Regression Modeling Cover" width="300"/></a></p>
+-->
+<div class="rmdnote">
+<p><strong>Note</strong>: This book is a work in progress. If you have any feedback, please feel free to <a href="https://github.com/bangtedy/akuanti/issues">file an issue on GitHub</a>. Thank you!</p>
+</div>
+<div id="deskripsi-singkat-mata-kuliah" class="section level2 unnumbered">
+<h2>Deskripsi Singkat Mata Kuliah<a class="anchor" aria-label="anchor" href="#deskripsi-singkat-mata-kuliah"><i class="fas fa-link"></i></a>
+</h2>
+<p>Matakuliah ini akan membahas dan mempresentasikan konsep-konsep dan prinsip-prinsip statistika sebagai alat investigasi kuantitatif yang dilengkapi dengan grafik dan verbal yang intuitif untuk pengambilan keputusan bisnis. Matakuliah ini berfokus pada alat-alat/metode-metode yang dapat diterapkan (khususnya regresi) untuk pengambilan keputusan bisnis dan mengembangkan keterampilan penggunaan program komputer R.</p>
+<p>Materi yang akan dibahas meliputi: statistik dan analitik bisnis, visualisasi data dengan grafik dan chart, statistika deskriptif, peluang, Distribusi diskret dan kontinyu, Distribusi Uniform dan Distribusi Normal, distribusi Sampling, estimasi parameter, uji hipotesis, korelasi, regresi sederhana, regresi berganda, uji asumsi klasik, GLM.</p>
+<p>Buku Rujukan Utama:</p>
+<ol style="list-style-type: decimal">
+<li>Black, Ken. 2019. Business statistics: for contemporary decision making, 10th edition. Wiley</li>
+</ol>
+<p>Buku Pendukung:</p>
+<ol style="list-style-type: decimal">
+<li>Akinkunmi, Mustapha Abiodun, 2019. Business Statistics with Solutions in R. Walter de Gruyter GmbH.</li>
+<li>Heumann, C., Schomaker, M &amp; Shalabh, 2016. Introduction to Statistics and Data Analysis : With Exercises, Solutions and Applications in R. Springer.</li>
+</ol>
+</div>
+<div id="capaian-pembelajaran-matakuliah" class="section level2 unnumbered">
+<h2>Capaian Pembelajaran Matakuliah<a class="anchor" aria-label="anchor" href="#capaian-pembelajaran-matakuliah"><i class="fas fa-link"></i></a>
+</h2>
+<p>Mahasiswa mampu menjelaskan dan mempresentasikan konsep-konsep statistika sebagai alat investigasi kuantitatif yang dilengkapi dengan grafik dan verbal yang intuitif untuk pengambilan keputusan bisnis serta memiliki keterampilan keterampilan penggunaan program komputer R.</p>
+</div>
+<div id="rencana-pelaksanaan-pembelajaran" class="section level2 unnumbered">
+<h2>RENCANA PELAKSANAAN PEMBELAJARAN<a class="anchor" aria-label="anchor" href="#rencana-pelaksanaan-pembelajaran"><i class="fas fa-link"></i></a>
+</h2>
+<div id="minggu-1" class="section level3 unnumbered">
+<h3>Minggu 1<a class="anchor" aria-label="anchor" href="#minggu-1"><i class="fas fa-link"></i></a>
+</h3>
+<p><strong>Tujuan Pembelajaran:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Mahasiswa mampu mencontohkan grafik dan data statistic dalam konteks bisnis.</li>
+<li>Mahasiswa mampu menjelaskan istilah-istilah statistic yang penting seperti populasi, sampel, parameters dan kaitannya dengan statistika deskriptif dan inferensial.</li>
+<li>Mahasiswa dapat membedakan antara variable, pengukuran dan data.</li>
+<li>Mahasiswa mampu membandingkan empat level data: nominal, ordinal, interval, dan rasio.</li>
+</ol>
+<p><strong>Materi Pokok:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Konsep dasar statistika</li>
+<li>Pengukuran data</li>
+</ol>
+</div>
+<div id="minggu-2" class="section level3 unnumbered">
+<h3>Minggu 2<a class="anchor" aria-label="anchor" href="#minggu-2"><i class="fas fa-link"></i></a>
+</h3>
+<p><strong>Tujuan Pembelajaran:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Mahasiswa mampu membuat distribusi frekuensi dari data.</li>
+<li>Mahasiswa mampu membuat dan menginterpretasikan berbagai grafik data kuantitatif seperti histograms, frequency polygons, ogives, dot plots, dan stem-and-leaf plots.</li>
+<li>Mahasiswa mampu membuat dan menginterpretasikan berbagai grafik data kualitatif : pie charts, bar graphs, and Pareto charts.</li>
+<li>Mahasiswa mampu membangun table tabulasi silang.</li>
+<li>Mahasiswa mampu membuat grafik time-series dan mengidentifikasi trend di dalam data.</li>
+</ol>
+<p><strong>Materi Pokok:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Distribusi frekuensi</li>
+<li>Grafik data kuantitatif</li>
+<li>Grafik data kualitatif</li>
+<li>Grafik dua variabel</li>
+<li>Visualisasi data Time-Series</li>
+</ol>
+</div>
+<div id="minggu-3" class="section level3 unnumbered">
+<h3>Minggu 3<a class="anchor" aria-label="anchor" href="#minggu-3"><i class="fas fa-link"></i></a>
+</h3>
+<p><strong>Tujuan Pembelajaran:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Mahasiswa mampu menerapkan berbagai ukuran pemusatan: rata-rata, median dan mode pada sekumpulan data.</li>
+<li>Mahasiswa mampu menerapkan berbagai ukuran persebaran pada data: range, interquartile range, variance, and standard.</li>
+<li>Mahasiswa mampu menjelaskan distribusi data secara statistic dan grafik dengan menggunakan skewness and box-and-whisker plots.</li>
+<li>Mahasiswa mampu menggunakan statistika deskriptif sebagai alat analitik bisnis dalam membuat keputusan.</li>
+</ol>
+<p><strong>Materi Pokok:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Ukuran pemusatan</li>
+<li>Ukuran persebaran</li>
+<li>Ukuran bentuk</li>
+</ol>
+</div>
+<div id="minggu-4" class="section level3 unnumbered">
+<h3>Minggu 4<a class="anchor" aria-label="anchor" href="#minggu-4"><i class="fas fa-link"></i></a>
+</h3>
+<p><strong>Tujuan Pembelajaran:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Mahasiswa mampu menjelaskan peluang dan membedakan tiga metode untuk mendapatkan peluang.</li>
+<li>Mahasiswa mampu menguraikan elemen-elemen dari peluang.</li>
+<li>Mahasiswa mampu membandingkan marginal, union, joint, and conditional probabilities.</li>
+<li>Mahasiswa mampu menghitung peluang dengan menggunakan hukum penjumlahan dan joint probability</li>
+<li>Mahasiswa mampu menghitung joint probability dari kejadian independen dan dependen dengan menggunakan hukum perkalian umum dan khusus.</li>
+<li>Mahasiswa mampu menghitung conditional probabilities</li>
+</ol>
+<p><strong>Materi Pokok:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Pengantar peluang</li>
+<li>Struktur peluang</li>
+<li>Marginal, Union, Joint, dan Conditional Probabilities</li>
+<li>Hukum penjumlahan</li>
+<li>Hukum perkalian</li>
+<li>Conditional Probability</li>
+</ol>
+</div>
+<div id="minggu-5" class="section level3 unnumbered">
+<h3>Minggu 5<a class="anchor" aria-label="anchor" href="#minggu-5"><i class="fas fa-link"></i></a>
+</h3>
+<p><strong>Tujuan Pembelajaran:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Mahasiswa mampu menjelaskan variable acak untuk membedakan antara distribusi diskret dengan distribusi kontinus.</li>
+<li>Mahasiwa mampu menentukan rata-rata, ragam, standar deviasi dari distribusi diskret.</li>
+<li>Mahasiswa mampu menyelesaikan persoalan yang melibatkan distribusi binomial dengan menggunakan rumus dan table binomial.</li>
+<li>Mahasiswa mampu menyelesaikan soal yang melibatkan distribusi Poisson dengan menggunakan rumus dan table Poisson.</li>
+<li>Mahasiswa mampu menyelesaikan soal yang melibatkan distribusi hypergeometric dengan menggunakan rumus hypergeometric.</li>
+</ol>
+<p><strong>Materi Pokok:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Distribusi diskret dan Continuous</li>
+<li>Distribusi Binomial</li>
+<li>Distribusi Poisson</li>
+<li>Distribusi Hypergeometric</li>
+</ol>
+</div>
+<div id="minggu-6" class="section level3 unnumbered">
+<h3>Minggu 6<a class="anchor" aria-label="anchor" href="#minggu-6"><i class="fas fa-link"></i></a>
+</h3>
+<p><strong>Tujuan Pembelajaran:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Mahasiswa mampu menyelesaikan peluang untuk data sebaran normal dengan menggunakan z scores</li>
+<li>Mahasiswa mampu menemukan rata-rata, standar deviasi dan nilai x dengan menggunakan informasi luas kurva.</li>
+<li>Mahasiswa mampu menyelesaikan persoalan dari data sebaran binomial dengan menggunakan sebaran normal.</li>
+<li>Mahasiswa mampu menyelesaikan peluang dalam sebaran eksponensial dan membandingkannya dengan distribusi diskret Poisson.</li>
+</ol>
+<p><strong>Materi Pokok:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Distribusi Uniform</li>
+<li>Distribusi Normal</li>
+<li>Penggunaan kurva normal untuk distribusi Binomial</li>
+<li>Distribusi Eksponensial</li>
+</ol>
+</div>
+<div id="minggu-7" class="section level3 unnumbered">
+<h3>Minggu 7<a class="anchor" aria-label="anchor" href="#minggu-7"><i class="fas fa-link"></i></a>
+</h3>
+<p><strong>Tujuan Pembelajaran:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Mahasiswa mampu membandingkan sampling dengan sensus dan membedakan berbagai kelebihan metode sampling.</li>
+<li>Mahasiswa mampu menjelaskan distribusi rataan sampel dengan menggunakan teorema central limit.</li>
+<li>Mahasiswa mampu menjelaskan distribusi proporsi dengan menggunakan rumus z.</li>
+</ol>
+<p><strong>Materi Pokok:</strong></p>
+<ol style="list-style-type: decimal">
+<li>Sampling</li>
+<li>Distribusi Sampling X</li>
+<li>Distribusi Sampling p</li>
+</ol>
+</div>
+<div id="minggu-8" class="section level3 unnumbered">
+<h3>Minggu 8<a class="anchor" aria-label="anchor" href="#minggu-8"><i class="fas fa-link"></i></a>
+</h3>
+<p><strong>UJIAN TENGAH SEMESTER</strong></p>
+</div>
+<div id="minggu-9" class="section level3 unnumbered">
+<h3>Minggu 9<a class="anchor" aria-label="anchor" href="#minggu-9"><i class="fas fa-link"></i></a>
+</h3>
+<p><strong>Tujuan Pembelajaran:</strong></p>
+</div>
+<div id="minggu-10" class="section level3 unnumbered">
+<h3>Minggu 10<a class="anchor" aria-label="anchor" href="#minggu-10"><i class="fas fa-link"></i></a>
+</h3>
+<p><strong>Tujuan Pembelajaran:</strong></p>
+</div>
+<div id="minggu-11" class="section level3 unnumbered">
+<h3>Minggu 11<a class="anchor" aria-label="anchor" href="#minggu-11"><i class="fas fa-link"></i></a>
+</h3>
+<p><strong>Tujuan Pembelajaran:</strong></p>
+</div>
+<div id="minggu-12" class="section level3 unnumbered">
+<h3>Minggu 12<a class="anchor" aria-label="anchor" href="#minggu-12"><i class="fas fa-link"></i></a>
+</h3>
+<p><strong>Tujuan Pembelajaran:</strong></p>
+</div>
+<div id="minggu-13" class="section level3 unnumbered">
+<h3>Minggu 13<a class="anchor" aria-label="anchor" href="#minggu-13"><i class="fas fa-link"></i></a>
+</h3>
+<p><strong>Tujuan Pembelajaran:</strong></p>
+</div>
+<div id="minggu-14" class="section level3 unnumbered">
+<h3>Minggu 14<a class="anchor" aria-label="anchor" href="#minggu-14"><i class="fas fa-link"></i></a>
+</h3>
+<p><strong>Tujuan Pembelajaran:</strong></p>
+</div>
+<div id="minggu-15" class="section level3 unnumbered">
+<h3>Minggu 15<a class="anchor" aria-label="anchor" href="#minggu-15"><i class="fas fa-link"></i></a>
+</h3>
+<p><strong>Tujuan Pembelajaran:</strong></p>
+</div>
+<div id="minggu-16" class="section level3 unnumbered">
+<h3>Minggu 16<a class="anchor" aria-label="anchor" href="#minggu-16"><i class="fas fa-link"></i></a>
+</h3>
+<p><strong>UJIAN AKHIR SEMESTER</strong></p>
+<p>Tedy Herlambang<br>
+September 2022</p>
+<p>Happy reading!</p>
+<p><em>Last update: 16 September 2022</em></p>
+
+</div>
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="empty"></div>
+<div class="next"><a href="konsep-dasar.html"><span class="header-section-number">1</span> Konsep Dasar Analisis Kuantitatif</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#welcome">Welcome</a></li>
+<li><a class="nav-link" href="#deskripsi-singkat-mata-kuliah">Deskripsi Singkat Mata Kuliah</a></li>
+<li><a class="nav-link" href="#capaian-pembelajaran-matakuliah">Capaian Pembelajaran Matakuliah</a></li>
+<li>
+<a class="nav-link" href="#rencana-pelaksanaan-pembelajaran">RENCANA PELAKSANAAN PEMBELAJARAN</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#minggu-1">Minggu 1</a></li>
+<li><a class="nav-link" href="#minggu-2">Minggu 2</a></li>
+<li><a class="nav-link" href="#minggu-3">Minggu 3</a></li>
+<li><a class="nav-link" href="#minggu-4">Minggu 4</a></li>
+<li><a class="nav-link" href="#minggu-5">Minggu 5</a></li>
+<li><a class="nav-link" href="#minggu-6">Minggu 6</a></li>
+<li><a class="nav-link" href="#minggu-7">Minggu 7</a></li>
+<li><a class="nav-link" href="#minggu-8">Minggu 8</a></li>
+<li><a class="nav-link" href="#minggu-9">Minggu 9</a></li>
+<li><a class="nav-link" href="#minggu-10">Minggu 10</a></li>
+<li><a class="nav-link" href="#minggu-11">Minggu 11</a></li>
+<li><a class="nav-link" href="#minggu-12">Minggu 12</a></li>
+<li><a class="nav-link" href="#minggu-13">Minggu 13</a></li>
+<li><a class="nav-link" href="#minggu-14">Minggu 14</a></li>
+<li><a class="nav-link" href="#minggu-15">Minggu 15</a></li>
+<li><a class="nav-link" href="#minggu-16">Minggu 16</a></li>
+</ul>
+</li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/keithmcnulty/peopleanalytics-regression-book/blob/master/index.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/keithmcnulty/peopleanalytics-regression-book/edit/master/index.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Analisis Kuantitatif</strong>: Dengan Contoh Menggunakan R" was written by Tedy Herlambang. </p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>

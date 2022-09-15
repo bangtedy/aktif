@@ -1,0 +1,16 @@
+# Ukuran Pemusatan
+
+**Tujuan Pembelajaran:**
+
+1.	Mahasiswa mampu menerapkan berbagai ukuran pemusatan: rata-rata, median dan mode pada sekumpulan data. 
+2.	Mahasiswa mampu menerapkan berbagai ukuran persebaran pada data: range, interquartile range, variance, and standard.
+3.	Mahasiswa mampu menjelaskan distribusi data secara statistic dan grafik dengan menggunakan skewness and box-and-whisker plots.
+4.	Mahasiswa  mampu menggunakan statistika deskriptif sebagai alat analitik bisnis dalam membuat keputusan.
+
+**Materi Pokok:**
+
+1. Ukuran pemusatan
+2. Ukuran persebaran
+3. Ukuran bentuk
+
+

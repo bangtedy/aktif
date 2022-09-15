@@ -1,0 +1,17 @@
+`r if (knitr::is_latex_output()) '\\mainmatter'`
+
+# Konsep Dasar Analisis Kuantitatif {#konsep-dasar}
+
+**Tujuan Pembelajaran:**	
+
+1.	Mahasiswa mampu mencontohkan grafik dan data statistic dalam konteks bisnis.
+2.	Mahasiswa mampu menjelaskan istilah-istilah statistic yang penting seperti populasi, sampel, parameters dan kaitannya dengan statistika deskriptif dan inferensial.
+3.	Mahasiswa dapat membedakan antara variable, pengukuran dan data.
+4.	Mahasiswa mampu membandingkan empat level data: nominal, ordinal, interval, dan rasio.
+
+**Materi Pokok:**
+
+1.	Konsep dasar statistika
+2.	Pengukuran data
+
+

@@ -1,0 +1,19 @@
+# Peluang
+
+**Tujuan Pembelajaran:**
+
+1.	Mahasiswa mampu menjelaskan peluang dan membedakan tiga metode untuk mendapatkan peluang.
+2.	Mahasiswa mampu menguraikan elemen-elemen dari peluang. 
+3.	Mahasiswa mampu membandingkan marginal, union, joint, and conditional probabilities.
+4.	Mahasiswa mampu menghitung peluang dengan menggunakan hukum penjumlahan dan joint probability
+5.	Mahasiswa mampu menghitung joint probability dari kejadian independen dan dependen dengan menggunakan hukum perkalian umum dan khusus.
+6.	Mahasiswa mampu menghitung conditional probabilities
+
+**Materi Pokok:**
+
+1.	Pengantar peluang
+2.	Struktur peluang
+3.	Marginal, Union, Joint, dan Conditional Probabilities
+4.	Hukum penjumlahan
+5.	Hukum perkalian
+6.	Conditional Probability

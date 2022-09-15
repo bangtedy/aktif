@@ -1,0 +1,17 @@
+# Distribusi Data
+
+**Tujuan Pembelajaran:**
+
+1.	Mahasiswa mampu membuat distribusi frekuensi dari data.
+2.	Mahasiswa mampu membuat dan menginterpretasikan berbagai grafik data kuantitatif seperti histograms, frequency polygons, ogives, dot plots, dan stem-and-leaf plots.
+3.	Mahasiswa mampu membuat dan menginterpretasikan berbagai grafik data kualitatif: pie charts, bar graphs, and Pareto charts.
+4.	Mahasiswa mampu membangun table tabulasi silang. 
+5.	Mahasiswa mampu membuat grafik time-series dan mengidentifikasi trend di dalam data.
+
+**Materi Pokok:**		
+
+1.	Distribusi frekuensi
+2.	Grafik data kuantitatif
+3.	Grafik data kualitatif
+4.	Grafik dua variabel
+5.	Visualisasi data Time-Series

@@ -1,0 +1,4 @@
+konsep-dasar
+distribusi-data
+ukuran-pemusatan
+peluang
