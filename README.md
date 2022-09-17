@@ -1,10 +1,8 @@
-# peopleanalytics-regression-book
-Handbook of Regression Modeling in People Analytics
+# Analisis Kuantitatif
 
-This is the repository for the textbook [Handbook of Regression Modeling in People Analytics](http://peopleanalytics-regression-book.org/).  
+Dengan Contoh Menggunakan R
+
+This is the repository for the book [Analisis Kuantitatif](https://bangtedy.github.io/aktif/).  
 
 Use Issues to flag corrections or requests for additional content.
 
-## Solutions to exercises
-
-Solutions to exercises requested by readers are progressively being posted [here](https://keithmcnulty.github.io/peopleanalytics-regression-book/solutions).

@@ -5,13 +5,13 @@ author: "Tedy Herlambang"
 site: bookdown::bookdown_site
 always_allow_html: true
 documentclass: krantz
-bibliography: r/book.bib
+bibliography: [aktif.bib,packages.bib]
 fig-caption: yes
 link-citations: yes
-github-repo: https://github.com/bangtedy/akuanti
+github-repo: https://github.com/bangtedy/aktif
 pagetitle: "Analisis Kuantitatif: Dengan Contoh Menggunakan R"
 description:  "An Introduction to quantitative analysis for business and management"
-url:  "https://bangtedy.github.io/akuanti"
+url:  "https://bangtedy.github.io/aktif"
 # cover-image: "www/cover/coverpage-og.png"
 twitter-handle: "t_hlb"
 papersize: A4
@@ -52,7 +52,7 @@ if (knitr::is_html_output()) {
 <div class="banner">
   <div class="banner__content">
     <div class="banner__text">
-      <strong>News:</strong> The new textbook in this series - <i>Handbook of Graphs and Networks in People Analytics</i> - is now online <a href="https://ona-book.org">here</a>
+      <strong>News:</strong> The new textbook in this series - <i>Analisis Kuantitatif</i> - is now online <a href="https://bangtedy.github.io/aktif">here</a>
       <button class="banner__close" type="button">
         <span class="material-icons">
           close
@@ -74,15 +74,6 @@ if (knitr::is_html_output()) {
 
 Welcome to the website for the book *Analisis Kuantitatif: Dengan Contoh Menggunakan R* by [Tedy Herlambang](https://twitter.com/t_hlb).  
 
-```{asis}
-<!-- 
-<p style="text-align: center;"><a href="https://www.routledge.com/Handbook-of-Regression-Modeling-in-People-Analytics-With-Examples-in-R/McNulty/p/book/9781032041742?utm_source=website&utm_medium=shared_link&utm_campaign=B027587_jm1_5ll_8pm_d765_handbookofregressionmodeling"><img src="www/cover/coverpage.png" alt="Handbook of Regression Modeling Cover" width="300"/></a></p>
--->
-
-::: {.rmdnote}
-**Note**: This book is a work in progress. If you have any feedback, please feel free to [file an issue on GitHub](https://github.com/bangtedy/akuanti/issues). Thank you!
-:::
-```
 
 `r if (knitr::is_latex_output()) '--> \\newpage\\thispagestyle{empty}\\null'`
 
@@ -91,9 +82,9 @@ Welcome to the website for the book *Analisis Kuantitatif: Dengan Contoh Menggun
 
 ## Deskripsi Singkat Mata Kuliah {-}
 
-Matakuliah ini akan membahas dan mempresentasikan konsep-konsep dan prinsip-prinsip statistika sebagai alat investigasi kuantitatif yang dilengkapi dengan grafik dan verbal yang intuitif untuk pengambilan keputusan bisnis. Matakuliah ini berfokus pada alat-alat/metode-metode yang dapat diterapkan (khususnya regresi) untuk pengambilan keputusan bisnis dan mengembangkan keterampilan penggunaan program komputer R. 
+Matakuliah ini akan membahas dan mempresentasikan konsep-konsep dan prinsip-prinsip statistika sebagai alat investigasi kuantitatif yang dilengkapi dengan tampilan grafik dan verbal yang intuitif untuk pengambilan keputusan bisnis. Fokus matakuliah ini pada alat-alt yang dapat diterapkan untuk pengambilan keputusan bisnis serta mengembangkan keterampilan penggunaan program R. 
 
-Materi yang akan dibahas meliputi: statistik dan analitik bisnis, visualisasi data dengan grafik dan chart, statistika deskriptif, peluang, Distribusi diskret dan kontinyu, Distribusi Uniform dan Distribusi Normal, distribusi Sampling, estimasi parameter, uji hipotesis, korelasi, regresi sederhana, regresi berganda, uji asumsi klasik, GLM.
+Materi yang akan dibahas meliputi: statistik dan analitik bisnis, visualisasi data dengan grafik dan chart, statistika deskriptif, peluang, distribusi diskret dan kontinyu, distribusi Uniform dan Normal, distribusi Sampling, estimasi parameter, uji hipotesis, korelasi, regresi sederhana, regresi berganda, uji asumsi klasik, GLM.
 
 Buku Rujukan Utama:
 
@@ -106,8 +97,7 @@ Buku Pendukung:
 
 ## Capaian Pembelajaran Matakuliah {-}
 
-Mahasiswa mampu menjelaskan dan mempresentasikan konsep-konsep statistika sebagai alat investigasi kuantitatif yang dilengkapi dengan grafik dan verbal yang intuitif untuk pengambilan keputusan bisnis serta memiliki keterampilan keterampilan penggunaan program komputer R. 
-
+Mahasiswa mampu menjelaskan dan mempresentasikan konsep-konsep statistika sebagai alat investigasi kuantitatif yang dilengkapi dengan grafik dan penjelasan verbal yang intuitif untuk pengambilan keputusan bisnis serta memiliki keterampilan penggunaan program R. 
 
 ## RENCANA PELAKSANAAN PEMBELAJARAN {-}
 
@@ -115,9 +105,9 @@ Mahasiswa mampu menjelaskan dan mempresentasikan konsep-konsep statistika sebaga
 
 **Tujuan Pembelajaran:**	
 
-1.	Mahasiswa mampu mencontohkan grafik dan data statistic dalam konteks bisnis.
-2.	Mahasiswa mampu menjelaskan istilah-istilah statistic yang penting seperti populasi, sampel, parameters dan kaitannya dengan statistika deskriptif dan inferensial.
-3.	Mahasiswa dapat membedakan antara variable, pengukuran dan data.
+1.	Mahasiswa mampu mencontohkan grafik dan data statistik dalam konteks bisnis.
+2.	Mahasiswa mampu menjelaskan istilah-istilah statistik penting seperti populasi, sampel, parameters dan kaitannya dengan statistika deskriptif dan inferensial.
+3.	Mahasiswa dapat membedakan antara variabel, pengukuran dan data.
 4.	Mahasiswa mampu membandingkan empat level data: nominal, ordinal, interval, dan rasio.
 
 **Materi Pokok:**
@@ -236,45 +226,69 @@ Mahasiswa mampu menjelaskan dan mempresentasikan konsep-konsep statistika sebaga
 
 **Tujuan Pembelajaran:**
 
+... in progress...will be uploaded after UTS
+
 ### Minggu 10 {-}
 
 **Tujuan Pembelajaran:**
+
+... in progress...will be uploaded after UTS
 
 ### Minggu 11 {-}
 
 **Tujuan Pembelajaran:**
 
+... in progress...will be uploaded after UTS
+
 ### Minggu 12 {-}
 
 **Tujuan Pembelajaran:**
+
+... in progress...will be uploaded after UTS
 
 ### Minggu 13 {-}
 
 **Tujuan Pembelajaran:**
 
+... in progress...will be uploaded after UTS
+
 ### Minggu 14 {-}
 
 **Tujuan Pembelajaran:**
+
+... in progress...will be uploaded after UTS
 
 ### Minggu 15 {-}
 
 **Tujuan Pembelajaran:**
 
+... in progress...will be uploaded after UTS
+
 ### Minggu 16 {-}
 
 **UJIAN AKHIR SEMESTER**
 
+```{asis}
+::: {.rmdnote}
+**Note**: This book is a work in progress. If you have any feedback, please feel free to [file an issue on GitHub](https://github.com/bangtedy/aktif/issues). Thank you!
+:::
+```
+
+Happy reading!
 
 Tedy Herlambang \
 September 2022
-
-
-Happy reading!
 
 *Last update:  `r format(Sys.Date(), "%d %B %Y")`*
 
 `r if (knitr::is_latex_output()) '-->'`
 
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown', 'broom', 'GGally', 'ggplot2', 'ggpmisc', 'metathis', 'readxl', 'kableExtra'
+), 'packages.bib')
+```
 
 
 
