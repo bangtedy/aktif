@@ -1,4 +1,7 @@
 konsep-dasar
+pendahuluan
+contoh-dan-populasi
+tiga-komponen-dasar-statistika
 distribusi-data
 ukuran-pemusatan
 peluang

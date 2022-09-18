@@ -14,4 +14,80 @@
 1.	Konsep dasar statistika
 2.	Pengukuran data
 
+## Pendahuluan
+
+Statistika,definisi sederhananya: penjelasan dan ringkasan dari kejadian-kejadian. Berapa produktivitas tanaman mangga atau bawang merah di Probolinggo? Berapa rata-rata curah hujan di Jawa Timur? Tetapi dari sudut pandang ilmiah, jawaban dari pertanyaan-pertanyaan ini banyak rentetannya: bagaimana pengukurannya, berapa banyak contoh datanya, berapa lama pencatatannya, bagaiamana dan apa perlakuannya dst. 
+
+Definis statistika yang lebih luas: sains, teknologi dan seni mengekstrak informasi dari data pengamatan atau data percobaan dengan penekanan pada upaya menyelesaikan persoalan-persoalan nyata. Apa persoalan dibalik produktivitas tanaman bawang merah? Apa persoalan dibalik *volatilitas* harga cabe rawit? Apa persoalan dibalik tingginya tingkat mangkir karyawan di sebuah perusahaan? Mengapa *oplag* koran-koran cetak terus turun?
+
+Coba perhatikan definisi statistika oleh Stigler (1986, hal. 1):
+
+*Modern statistics provides a quantitative technology for empirical science; it is a logic and methodology for the measurement of uncertainty and for examination of the consequences of that uncertainty in the planning and interpretation of experimentation and observation.*
+
+Logika dan teknologi dibalik metode statistika modern meliputi hampir semua bidang ilmu dari fisika, astronomi, kesehatan, pertanian, pendidikan, sosiologi, ekonomi dan bisnis. 
+
+Bagaimana dampak kenaikan harga BBM terhadap daya beli masyarakat? Reaksi yang umum untuk menjawab pertanyaan di atas adalah dengan menghitung *rata-rata* kenaikan harga barang dan jasa kebutuhan masyarakat. Bagaimana menghitung *rata-rata* kenaikan harga barang dan jasa kebutuhan masyarakat? Disinilah ilmu statistika kita gunakan.
+
+## Contoh dan Populasi
+
+Sebuah populasi terdiri semua objek atau partisipan yang relevan dengan kajian yang kita lakukan. Berapa jumlah seluruh petani bawang meraha di Probolinggo? Jadi a researcher defines the population to be whatever he or she is studying. 
+
+Contoh (*sample*) sebagian dari objek atau partisipan yang dipilih dari populasi yang menjadi kajian. Produktivitas dari tanaman bawang merah di Probolinggo dihitung dari contoh (*sample*) petani karena ada ribuan petani bawang merah di Probolinggo. A sample is a portion of the whole and, if properly taken, is representative of the whole. For various reasons, researchers often prefer to work with a sample of the population instead of the entire population. Mengapa?
+
+## Tiga komponen dasar statistika
+
+1. Desain: perencanaan dan pelaksanaan studi.
+2. Deskripsi: metode-metode untuk meringkas data. 
+3. Kesimpulan: pembuatan prediksi atau kesimpulan umum tentang populasi berdasarkan contoh pengamatan. 
+
+Desain meliputi desain percobaan (*experimental design*) dan desain pengamatan (*observational design*). Fokus dari buku ini adalah desain pengamatan.
+
+Description refers to ways of summarizing data that provide useful information
+about the phenomenon under study. It includes methods for describing both the sample available to us and the entire population of participants if only they could be measured. The average is one of the most common ways of summarizing data. Selain rata-rata, ukuran yang sering digunakan di statistika adalah median, modus, simpangan baku atau deviasi standar, varians atau ragam dan lain-lain.
+
+Inferensi atau kesimpulan meliputi metode-metode untuk menyimpulkan kondisi populasi berdasarkan contoh data.
+
+A descriptive measure of the population is called a parameter. Parameters are usually denoted by Greek letters. Examples of parameters are population mean (μ), population variance (σ2), and population standard deviation (σ). A descriptive measure of a sample is called a statistic. Statistics are usually denoted by Roman
+letters. Examples of statistics are sample mean sample variance (s2), and sample standard deviation (s).
+
+Inferences about parameters are made under uncertainty. Unless parameters are computed directly from the population, the statistician never knows with certainty whether the estimates or inferences made from samples are true. In an effort to estimate the level of confidence in the result of the process, statisticians use probability statements.
+
+Analisis kuantitatif untuk bisnis is about measuring phenomena in the business world and organizing, analyzing, and presenting the resulting numerical information in such a way that better, more informed business decisions can be made. Most business statistics studies contain variables, measurements, and data.
+
+Beberapa istilah berikut berhubungan dengan statistika bisnis:
+
+Sebuah variabel: is a characteristic of any entity being studied that is capable of taking on different values. Some examples of variables in business include return on investment, advertising dollars, labor productivity, stock price, historical cost, total sales, market share, age of worker, earnings per share, miles driven to work, time spent in store shopping, and many, many others. 
+
+In business statistics studies, most variables produce a measurement that can be used for analysis. 
+
+Pengukuran: is taken when a standard process is used to assign numbers to particular attributes or characteristics of a variable. Many measurements are obvious, such as time spent in a store shopping by a customer, age of the worker, or the number of miles driven to work. However, some measurements, such as labor productivity, customer satisfaction, and return on investment, have to be defined by the business analyst or by experts within the field. 
+
+Once such measurements are recorded and stored, they can be denoted as “data.” It can be said that data are recorded measurements. The processes of measuring and data gathering are basic to all that we do in business statistics and analytics. 
+
+It is data that are analyzed by business statisticians and analysts in order to
+learn more about the variables being studied. Sometimes, sets of data are organized into databases as a way to store data or as a means for more conveniently analyzing data or comparing variables. Valid data are the lifeblood of business statistics and business analytics, and it is important that the business analyst give thoughtful attention to the creation of meaningful, valid data before embarking on analysis and reaching conclusions.
+
+**Contoh Aplikasi**:
+
+A commercial catfish farm wants to advertise and as part of their promotion plan
+they want to tell customers how much their typical catfish weighs. To keep things
+simple for the moment, suppose they catch five catfish having weights 150, 275,
+200, 147 and 233 gram. The catfish farm does not want to report all five weights
+to the public but rather one number that conveys the typical weight among the
+five catfish caught. Ukuran apa yang sebaiknya dipakai untuk mengukur bobot dari ikan lele yang ditangkap? Rata-rata, modus, median atau simpangan baku?
+
+Rata-rata bisa menyesatkan:
+
+Imagine an investment firm is trying to recruit you. As a lure, they tell you
+that among the 11 individuals currently working at the company, the average
+salary, in thousands of dollars, is 88.7. However, on closer inspection, you find
+that the salaries are
+
+30, 25, 32, 28, 35, 31, 30, 36, 29, 200, 500
+
+where the two largest salaries correspond to the vice president and president,
+respectively. The average is 88.7, as claimed, but an argument can be made that
+this is hardly typical because the salaries of the president and vice president
+result in a sample mean that gives a distorted sense of what is typical. Note
+that the sample mean is considerably larger than 9 of the 11 salaries.
 
